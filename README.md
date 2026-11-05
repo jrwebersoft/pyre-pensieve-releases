@@ -109,9 +109,10 @@ Pyre Pensieve is built on other people's open-source work. The biggest pieces:
   Windows, and the [AppImage runtime](https://github.com/AppImage/type2-runtime) and Ubuntu's
   GTK and WebKitGTK in the Linux AppImage.
 
-Every one of them, about 400 in all, is credited with its license inside the app: open the
-Scrolls of the Pyre (`?`) and go to **Credits**. Each release also has the same list as
-`THIRD-PARTY-NOTICES.md`, and so does [this repository](THIRD-PARTY-NOTICES.md).
+Each download credits everything it contains, with its license, inside the app: open the
+Scrolls of the Pyre (`?`) and go to **Credits**. Libraries from the same project are one entry,
+so it's about 130 projects on Windows, 140 on macOS and 180 on Linux. Each release also has
+each system's list as `THIRD-PARTY-NOTICES-windows.md`, `-macos.md` and `-linux.md`.
 
 ## License
 
