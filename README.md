@@ -89,6 +89,30 @@ Each release has a `SHA256SUMS.txt` file. To check a file matches it:
 | macOS | `shasum -a 256 PyrePensieve-*-macos.dmg` |
 | Linux | `sha256sum -c --ignore-missing SHA256SUMS.txt` |
 
+## Credits
+
+Pyre Pensieve is built on other people's open-source work. The biggest pieces:
+
+- [Rust](https://www.rust-lang.org) and [Tauri](https://github.com/tauri-apps/tauri), which the
+  whole app is written in and drawn with.
+- [Lucide](https://lucide.dev), for most of the icons, some of which come from
+  [Feather](https://feathericons.com).
+- [pulldown-cmark](https://github.com/raphlinus/pulldown-cmark) for reading Markdown, and
+  [ammonia](https://github.com/rust-ammonia/ammonia) for keeping it safe to show.
+- [regex](https://github.com/rust-lang/regex) and
+  [aho-corasick](https://github.com/BurntSushi/aho-corasick) for searching,
+  [rayon](https://github.com/rayon-rs/rayon) for doing it on every core, and
+  [serde](https://github.com/serde-rs/serde) for reading chats.
+- [trash](https://github.com/ArturKovacs/trash) for the Recycle Bin and Trash on Windows and
+  Linux, and [objc2](https://github.com/madsmtm/objc2) for the Trash on macOS.
+- Microsoft's [WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) loader on
+  Windows, and the [AppImage runtime](https://github.com/AppImage/type2-runtime) and Ubuntu's
+  GTK and WebKitGTK in the Linux AppImage.
+
+Every one of them, about 400 in all, is credited with its license inside the app: open the
+Scrolls of the Pyre (`?`) and go to **Credits**. Each release also has the same list as
+`THIRD-PARTY-NOTICES.md`, and so does [this repository](THIRD-PARTY-NOTICES.md).
+
 ## License
 
 Pyre Pensieve is free for personal, hobby, study, research, school and charity use, under the
